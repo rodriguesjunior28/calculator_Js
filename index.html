@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+    <title>Calculadora javaScript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form name="calcForm">
+                <div class="display">                         <!-- readonly - significa que não pode interagir -->
+                    <input id="display" type="text" name="display" readonly> 
+                </div>
+                <div>
+                    <hr><br>
+                    <input onclick="limparValor()" type="button" value="AC" class="operator">
+                    <input onclick="limparValor()" type="button" value="DE" class="operator">
+                    <input onclick="adcionarDecimal()" type="button" value="." class="operator">
+                    <input onclick="exibirNaTela('/')" type="button" value="/" class="operator">
+                </div>
+                <div>
+                    <input onclick="exibirNaTela('7')" type="button" value="7">
+                    <input onclick="exibirNaTela('8')" type="button" value="8">
+                    <input onclick="exibirNaTela('9')" type="button" value="9">
+                    <input onclick="exibirNaTela('*')" type="button" value="*" class="operator">
+                </div>
+                <div>
+                    <input onclick="exibirNaTela('4')" type="button" value="4">
+                    <input onclick="exibirNaTela('5')" type="button" value="5">
+                    <input onclick="exibirNaTela('6')" type="button" value="6">
+                    <input onclick="exibirNaTela('-')" type="button" value="-" class="operator">
+                </div>
+                <div>
+                    <input onclick="exibirNaTela('1')" id="btnOne" type="button" value="1">
+                    <input onclick="exibirNaTela('2')" type="button" value="2">
+                    <input onclick="exibirNaTela('3')" type="button" value="3">
+                    <input onclick="exibirNaTela('+')" type="button" value="+" class="operator">
+                </div>
+                <div>
+                    <input onclick="exibirNaTela('00')" type="button" value="00">
+                    <input onclick="exibirNaTela('0')" type="button" value="0">
+                    <input onclick="realizarConta()" type="button" value="=" class="operator">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
